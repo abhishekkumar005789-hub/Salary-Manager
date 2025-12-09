@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics - Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">💰 Expense Tracker</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="expenses.html">Expenses</a></li>
+                <li><a href="analytics.html" class="active">Analytics</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="header-section">
+            <h1>Analytics & Insights</h1>
+            <p class="subtitle">Detailed analysis of your spending patterns</p>
+        </section>
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">📈</div>
+                <h3>Spending Trend</h3>
+                <p class="stat-value">↑ 12%</p>
+                <p class="stat-period">vs Last Month</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🎯</div>
+                <h3>Budget Status</h3>
+                <p class="stat-value">81.67%</p>
+                <p class="stat-period">Used</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🏆</div>
+                <h3>Largest Expense</h3>
+                <p class="stat-value">₹12,450</p>
+                <p class="stat-period">Doctor Visit</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <h3>Smallest Expense</h3>
+                <p class="stat-value">₹705</p>
+                <p class="stat-period">Coffee</p>
+            </div>
+        </section>
+        <div class="summary-grid">
+            <div class="summary-card">
+                <h3>Top Spending Categories</h3>
+                <div class="category-list">
+                    <div class="category-item">
+                        <span class="category-name">
+                            <span class="category-badge food">Food</span>
+                            <span>Food & Dining</span>
+                        </span>
+                        <span class="category-amount">₹51,915</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%;"></div>
+                    </div>
+
+                    <div class="category-item">
+                        <span class="category-name">
+                            <span class="category-badge utilities">Utilities</span>
+                            <span>Bills & Utilities</span>
+                        </span>
+                        <span class="category-amount">₹26,975</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 42%;"></div>
+                    </div>
+
+                    <div class="category-item">
+                        <span class="category-name">
+                            <span class="category-badge health">Health</span>
+                            <span>Health & Fitness</span>
+                        </span>
+                        <span class="category-amount">₹18,674</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 29%;"></div>
+                    </div>
+
+                    <div class="category-item">
+                        <span class="category-name">
+                            <span class="category-badge entertainment">Entertainment</span>
+                            <span>Entertainment</span>
+                        </span>
+                        <span class="category-amount">₹13,030</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 20%;"></div>
+                    </div>
+
+                    <div class="category-item">
+                        <span class="category-name">
+                            <span class="category-badge transport">Transport</span>
+                            <span>Transportation</span>
+                        </span>
+                        <span class="category-amount">₹8,010</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 12%;"></div>
+                    </div>
+
+                    <div class="category-item">
+                        <span class="category-name">
+                            <span class="category-badge education">Education</span>
+                            <span>Education</span>
+                        </span>
+                        <span class="category-amount">₹2,074</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 3%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <h3>Monthly Overview</h3>
+                <div class="overview-list">
+                    <div class="overview-item">
+                        <span>Highest Day</span>
+                        <strong>₹23,680</strong>
+                    </div>
+                    <div class="overview-item">
+                        <span>Lowest Day</span>
+                        <strong>₹705</strong>
+                    </div>
+                    <div class="overview-item">
+                        <span>Average Daily</span>
+                        <strong>₹6,771</strong>
+                    </div>
+                    <div class="overview-item success">
+                        <span>Budget Remaining</span>
+                        <strong>₹45,850</strong>
+                    </div>
+                    <div class="overview-item">
+                        <span>Days Tracked</span>
+                        <strong>30</strong>
+                    </div>
+                    <div class="overview-item">
+                        <span>Avg per Transaction</span>
+                        <strong>₹6,771</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="expenses-section" style="margin-top: 3rem;">
+            <div class="section-header">
+                <h2>Category Performance</h2>
+                <p class="section-subtitle">Detailed breakdown of expenses by category</p>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="expenses-table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Total</th>
+                            <th>% of Budget</th>
+                            <th>Transactions</th>
+                            <th>Avg Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="category food">Food</span></td>
+                            <td class="amount">₹51,915</td>
+                            <td>25.5%</td>
+                            <td>4</td>
+                            <td>₹12,978</td>
+                        </tr>
+                        <tr>
+                            <td><span class="category utilities">Utilities</span></td>
+                            <td class="amount">₹26,975</td>
+                            <td>13.3%</td>
+                            <td>2</td>
+                            <td>₹13,487</td>
+                        </tr>
+                        <tr>
+                            <td><span class="category health">Health</span></td>
+                            <td class="amount">₹18,674</td>
+                            <td>9.2%</td>
+                            <td>2</td>
+                            <td>₹9,337</td>
+                        </tr>
+                        <tr>
+                            <td><span class="category entertainment">Entertainment</span></td>
+                            <td class="amount">₹13,030</td>
+                            <td>6.4%</td>
+                            <td>3</td>
+                            <td>₹4,343</td>
+                        </tr>
+                        <tr>
+                            <td><span class="category transport">Transport</span></td>
+                            <td class="amount">₹8,010</td>
+                            <td>3.9%</td>
+                            <td>2</td>
+
+                            <td>₹4,005</td>
+                        </tr>
+                        <tr>
+                            <td><span class="category education">Education</span></td>
+                            <td class="amount">₹2,074</td>
+                            <td>1.0%</td>
+                            <td>1</td>
+                            <td>₹2,074</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 Expense Tracker. Track your finances wisely.</p>
+        </footer>
+    </main>
+</body>
+</html>

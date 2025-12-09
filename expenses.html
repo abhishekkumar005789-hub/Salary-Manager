@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses - Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">💰 Expense Tracker</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="expenses.html" class="active">Expenses</a></li>
+                <li><a href="analytics.html">Analytics</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="header-section">
+            <h1>All Expenses</h1>
+            <p class="subtitle">View and manage all your expense records</p>
+        </section>
+
+        <section class="filter-section">
+            <div class="filter-group">
+                <h3>Filter by Category</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Food</button>
+                    <button class="filter-btn">Transport</button>
+                    <button class="filter-btn">Entertainment</button>
+                    <button class="filter-btn">Health</button>
+                    <button class="filter-btn">Utilities</button>
+                    <button class="filter-btn">Education</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="expenses-section">
+            <div class="table-wrapper">
+                <table class="expenses-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Item</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025-11-24</td>
+                            <td>Coffee & Breakfast</td>
+                            <td><span class="category food">Food</span></td>
+                            <td class="amount">₹705</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-24</td>
+                            <td>Grocery Shopping</td>
+                            <td><span class="category food">Food</span></td>
+                            <td class="amount">₹5,420</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-23</td>
+                            <td>Gas Fill-up</td>
+                            <td><span class="category transport">Transport</span></td>
+                            <td class="amount">₹4,316</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-23</td>
+                            <td>Netflix Subscription</td>
+                            <td><span class="category entertainment">Entertainment</span></td>
+                            <td class="amount">₹1,329</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-22</td>
+                            <td>Gym Membership</td>
+                            <td><span class="category health">Health</span></td>
+                            <td class="amount">₹4,149</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-22</td>
+                            <td>Restaurant Dinner</td>
+                            <td><span class="category food">Food</span></td>
+                            <td class="amount">₹4,876</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-21</td>
+                            <td>Book Purchase</td>
+                            <td><span class="category education">Education</span></td>
+                            <td class="amount">₹2,074</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-21</td>
+                            <td>Electric Bill</td>
+                            <td><span class="category utilities">Utilities</span></td>
+                            <td class="amount">₹10,375</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-20</td>
+                            <td>Movie Tickets</td>
+                            <td><span class="category entertainment">Entertainment</span></td>
+                            <td class="amount">₹2,324</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-20</td>
+                            <td>Doctor Visit</td>
+                            <td><span class="category health">Health</span></td>
+                            <td class="amount">₹12,450</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-19</td>
+                            <td>Uber Ride</td>
+                            <td><span class="category transport">Transport</span></td>
+                            <td class="amount">₹1,537</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-19</td>
+                            <td>Lunch Meeting</td>
+                            <td><span class="category food">Food</span></td>
+                            <td class="amount">₹2,969</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-18</td>
+                            <td>Online Course</td>
+                            <td><span class="category education">Education</span></td>
+                            <td class="amount">₹8,299</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-18</td>
+                            <td>Internet Bill</td>
+                            <td><span class="category utilities">Utilities</span></td>
+                            <td class="amount">₹6,639</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td>2025-11-17</td>
+                            <td>Concert Tickets</td>
+                            <td><span class="category entertainment">Entertainment</span></td>
+                            <td class="amount">₹9,960</td>
+                            <td><span class="status completed">✓</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">💸</div>
+                <h3>Total Spent</h3>
+                <p class="stat-value">₹3,18,312</p>
+                <p class="stat-period">All time</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📅</div>
+                <h3>This Month</h3>
+                <p class="stat-value">₹2,03,150</p>
+                <p class="stat-period">November</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <h3>Transactions</h3>
+                <p class="stat-value">45</p>
+                <p class="stat-period">Records</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⚡</div>
+                <h3>Average</h3>
+                <p class="stat-value">₹7,073</p>
+                <p class="stat-period">Per transaction</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2025 Expense Tracker. Track your finances wisely.</p>
+        </footer>
+    </main>
+</body>
+</html>
